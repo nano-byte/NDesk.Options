@@ -709,7 +709,7 @@ namespace Mono.Options
 				from argument in arguments
 				where ++c.OptionIndex >= 0 && (process || def != null)
 					? process
-						? argument == "--" 
+						? argument == "--" && Count > 0
 							? (process = false)
 							: !Parse (argument, c)
 								? def != null 
@@ -736,7 +736,7 @@ namespace Mono.Options
 			Option def = Contains ("<>") ? this ["<>"] : null;
 			foreach (string argument in arguments) {
 				++c.OptionIndex;
-				if (argument == "--") {
+				if (argument == "--" && Count > 0) {
 					process = false;
 					continue;
 				}
