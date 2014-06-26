@@ -1,0 +1,14 @@
+/build/
+/src/_ReSharper.*/
+/src/_TeamCity.*/
+/src/_dotTrace.*/
+/src/_dotMemory.*/
+obj/
+*.bak
+*.cache
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.DotSettings
+*.resources
