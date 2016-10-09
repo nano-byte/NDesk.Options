@@ -331,7 +331,7 @@ namespace Mono.Options
 		}
 
 		public string           Prototype       {get {return prototype;}}
-		public string           Description     {get {return descriptionCached ?? (descriptionCached = description());}}
+		public string           Description     {get {return descriptionCached ?? ((description == null) ? null : descriptionCached = description());}}
 		public OptionValueType  OptionValueType {get {return type;}}
 		public int              MaxValueCount   {get {return count;}}
 
