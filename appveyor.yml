@@ -1,0 +1,17 @@
+image: Visual Studio 2017
+
+before_build:
+  - gitversion /l console /output buildserver
+
+build_script:
+  - ps: .\build.ps1 $env:GitVersion_NuGetVersion
+
+artifacts:
+  - path: build\Release\*.nupkg
+    name: NuGet
+
+deploy:
+  provider: Environment
+  name: nuget.org
+  on:
+    appveyor_repo_tag: true
