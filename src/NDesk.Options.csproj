@@ -12,7 +12,7 @@
   <PropertyGroup>
     <PackageId>NDesk.Options.Patched</PackageId>
     <Description>Command-line parsing library. Some custom patches and recompiled for .NET Standard.</Description>
-    <PackageProjectUrl>http://www.ndesk.org/Options</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/nano-byte/NDesk.Options</PackageProjectUrl>
     <PackageLicenseUrl>https://opensource.org/licenses/mit-license.php</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/nano-byte/NDesk.Options</RepositoryUrl>
     <Copyright>Copyright (C) 2008 Novell</Copyright>
