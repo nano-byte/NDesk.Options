@@ -19,11 +19,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <DefineConstants>NDESK_OPTIONS</DefineConstants>
+    <DefineConstants>$(DefineConstants);NDESK_OPTIONS</DefineConstants>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)'!='net20'">
-    <DefineConstants>LINQ</DefineConstants>
+    <DefineConstants>$(DefineConstants);LINQ</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
