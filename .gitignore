@@ -1,4 +1,4 @@
-/build/
+/artifacts/
 /src/_ReSharper*/
 obj/
 *.bak

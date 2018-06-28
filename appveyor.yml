@@ -7,7 +7,7 @@ build_script:
   - ps: .\build.ps1 $env:GitVersion_NuGetVersion
 
 artifacts:
-  - path: build\Release\*.nupkg
+  - path: artifacts\Release\*.nupkg
     name: NuGet
 
 deploy:

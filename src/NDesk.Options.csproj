@@ -6,7 +6,7 @@
     <IncludeSource>True</IncludeSource>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>sgKey.snk</AssemblyOriginatorKeyFile>
-    <OutputPath>..\build\$(Configuration)\</OutputPath>
+    <OutputPath>..\artifacts\$(Configuration)\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup>
