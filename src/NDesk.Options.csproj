@@ -13,8 +13,8 @@
     <PackageId>NDesk.Options.Patched</PackageId>
     <Description>Command-line parsing library. Some custom patches and recompiled for .NET Standard.</Description>
     <PackageProjectUrl>https://github.com/nano-byte/NDesk.Options</PackageProjectUrl>
-    <PackageLicenseUrl>https://opensource.org/licenses/mit-license.php</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/nano-byte/NDesk.Options</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Copyright (C) 2008 Novell</Copyright>
   </PropertyGroup>
 
