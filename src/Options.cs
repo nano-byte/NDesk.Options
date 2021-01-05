@@ -1065,17 +1065,19 @@ namespace Mono.Options
 			}
 			int length = 80 - OptionWidth - 1;
 			int start = 0, end;
+			bool isWhiteSpaceAndNotLastChar;
 			do {
 				end = GetLineEnd (start, length, description);
 				char c = description [end-1];
-				if (char.IsWhiteSpace (c))
+				isWhiteSpaceAndNotLastChar = char.IsWhiteSpace(c) && end > start;
+				if (isWhiteSpaceAndNotLastChar)
 					--end;
 				bool writeContinuation = end != description.Length && !IsEolChar (c);
 				string line = description.Substring (start, end - start) +
 						(writeContinuation ? "-" : "");
 				yield return line;
 				start = end;
-				if (char.IsWhiteSpace (c))
+				if (isWhiteSpaceAndNotLastChar)
 					++start;
 				length = 80 - OptionWidth - 2 - 1;
 			} while (end < description.Length);
