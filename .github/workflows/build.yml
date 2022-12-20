@@ -6,13 +6,13 @@ jobs:
     runs-on: windows-latest
     steps:
       # Prepare
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: gittools/actions/gitversion/setup@v0.9.11
+      - uses: gittools/actions/gitversion/setup@v0.9.15
         with:
-          versionSpec: '5.7.x'
-      - uses: gittools/actions/gitversion/execute@v0.9.11
+          versionSpec: '5.11.x'
+      - uses: gittools/actions/gitversion/execute@v0.9.15
         id: gitversion
 
       # Build
@@ -26,12 +26,7 @@ jobs:
       # Release
       - name: Create GitHub Release
         if: steps.gitversion.outputs.preReleaseLabel == ''
-        uses: actions/create-release@v1
-        with:
-          tag_name: ${{github.ref}}
-          release_name: ${{github.ref}}
-        env:
-          GITHUB_TOKEN: ${{github.token}}
+        uses: softprops/action-gh-release@v1
 
       # Publish
       - name: Publish packages (GitHub)
