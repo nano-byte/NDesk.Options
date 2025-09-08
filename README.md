@@ -2,7 +2,7 @@ NDesk.Options
 =============
 
 [![NDesk.Options.Patched NuGet](https://img.shields.io/nuget/v/NDesk.Options.Patched.svg)](https://www.nuget.org/packages/NDesk.Options.Patched/)
-[![Build](https://github.com/nano-byte/NDesk.Options/workflows/Build/badge.svg?branch=master)](https://github.com/nano-byte/NDesk.Options/actions?query=workflow%3ABuild)
+[![Build](https://github.com/nano-byte/NDesk.Options/actions/workflows/build.yml/badge.svg)](https://github.com/nano-byte/NDesk.Options/actions/workflows/build.yml)
 
 Command-line parsing library. Some custom patches and recompiled for .NET Standard.
 
