@@ -18,6 +18,6 @@ function Run-MSBuild {
     if ($LASTEXITCODE -ne 0) {throw "Exit Code: $LASTEXITCODE"}
 }
 
-Run-MSBuild /v:Quiet /t:Restore /t:Build /p:Configuration=Release /p:Version=$Version src
+Run-MSBuild /v:Quiet /Restore /t:Build /p:Configuration=Release /p:Version=$Version src
 
 popd
